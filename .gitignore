@@ -1,0 +1,15 @@
+.build/
+.swiftpm/
+.DS_Store
+
+# Local audit output
+.accessibility-preflight/
+
+# Xcode and simulator artifacts
+DerivedData/
+*.xcresult
+
+# Temporary reports and screenshots
+audit-report*.json
+semantic-snapshot*.json
+screen-*.png

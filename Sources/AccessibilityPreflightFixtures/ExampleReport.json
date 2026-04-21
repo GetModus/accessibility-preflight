@@ -1,0 +1,22 @@
+{
+  "assisted_checks": [
+    "Verify VoiceOver order on onboarding screen"
+  ],
+  "findings": [
+    {
+      "confidence": "proven",
+      "detail": "Runtime element had empty label",
+      "evidence": [
+        "label=''"
+      ],
+      "file": "WelcomeView.swift",
+      "fix": "Set accessibilityLabel",
+      "line": 42,
+      "platform": "ios",
+      "severity": "CRITICAL",
+      "surface": "voiceover",
+      "title": "Missing label",
+      "verified_by": "runtime"
+    }
+  ]
+}

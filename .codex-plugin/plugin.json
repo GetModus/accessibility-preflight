@@ -1,0 +1,41 @@
+{
+  "name": "accessibility-preflight",
+  "version": "0.1.0",
+  "description": "iOS-first accessibility preflight for Apple app teams.",
+  "author": {
+    "name": "Modus",
+    "url": "https://github.com/getmodus/accessibility-preflight"
+  },
+  "homepage": "https://github.com/getmodus/accessibility-preflight",
+  "repository": "https://github.com/getmodus/accessibility-preflight",
+  "license": "MIT",
+  "keywords": [
+    "apple",
+    "accessibility",
+    "preflight",
+    "voiceover",
+    "voice-control",
+    "ios",
+    "macos",
+    "swift"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Accessibility Preflight",
+    "shortDescription": "iOS-first Apple accessibility audit workflow",
+    "longDescription": "Run static checks, runtime verification, review-gated remediation, and explicit manual assistive-tech workflows for Apple-native apps before release.",
+    "developerName": "Modus",
+    "category": "Developer Tools",
+    "capabilities": [
+      "Interactive",
+      "Write"
+    ],
+    "websiteURL": "https://github.com/getmodus/accessibility-preflight",
+    "defaultPrompt": [
+      "Run accessibility preflight on this Apple app.",
+      "Use the iOS lane by default unless the project is clearly macOS-only.",
+      "Treat generated remediation as review-gated and call out the manual assistive-tech workflow before claiming release confidence."
+    ],
+    "brandColor": "#1D8A6B"
+  }
+}

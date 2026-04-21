@@ -1,0 +1,44 @@
+name: IOSAccessibilityAuditHarness
+options:
+  createIntermediateGroups: true
+settings:
+  base:
+    SWIFT_VERSION: 6.0
+    IPHONEOS_DEPLOYMENT_TARGET: "17.0"
+targets:
+  IOSAccessibilityAuditHarness:
+    type: application
+    platform: iOS
+    deploymentTarget: "17.0"
+    sources:
+      - path: Sources/AccessibilityAuditHarnessApp
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.modus.accessibilitypreflight.harness
+        PRODUCT_NAME: IOSAccessibilityAuditHarness
+        GENERATE_INFOPLIST_FILE: YES
+  IOSAccessibilityAuditHarnessUITests:
+    type: bundle.ui-testing
+    platform: iOS
+    deploymentTarget: "17.0"
+    sources:
+      - path: Tests/AccessibilityAuditHarnessUITests
+      - path: Sources/Generated
+    dependencies:
+      - target: IOSAccessibilityAuditHarness
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.modus.accessibilitypreflight.harness-uitests
+        PRODUCT_NAME: IOSAccessibilityAuditHarnessUITests
+        GENERATE_INFOPLIST_FILE: YES
+        TEST_TARGET_NAME: IOSAccessibilityAuditHarness
+schemes:
+  IOSAccessibilityAuditHarness:
+    build:
+      targets:
+        IOSAccessibilityAuditHarness: all
+        IOSAccessibilityAuditHarnessUITests: [test]
+    test:
+      gatherCoverageData: false
+      targets:
+        - name: IOSAccessibilityAuditHarnessUITests
