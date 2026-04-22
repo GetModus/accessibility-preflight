@@ -1,5 +1,7 @@
 ## Accessibility Preflight
 
+![Accessibility Preflight social card](assets/accessibility-preflight-social-card.svg)
+
 `accessibility-preflight` is an iOS-first Swift CLI for Apple app accessibility audits.
 
 It is built for teams who want one repeatable pre-ship pass that:
@@ -12,6 +14,22 @@ It is built for teams who want one repeatable pre-ship pass that:
 Current status: `developer preview`
 
 The tool is strongest today on iOS. macOS support is real, but narrower: build-and-launch proof plus assisted follow-up rather than full parity with the iOS audit lane.
+
+### Why This Exists
+
+This tool comes from years of watching otherwise good Apple apps break accessibility in the same predictable ways.
+
+Part of that perspective comes from working alongside Apple's accessibility team and seeing the same avoidable failures show up again and again:
+- VoiceOver lands on controls that were never labeled correctly
+- text sizing breaks layouts, truncates critical actions, or pushes paywalls and onboarding flows out of reach
+- Voice Control runs into duplicate or ambiguous visible labels
+- teams assume accessibility is "mostly fine" because no one has a repeatable release check
+
+For the last six years, the pattern has been consistent: many accessibility failures are not malicious or exotic, they are setup failures that ship because teams do not have enough visibility before release.
+
+That hurts users and product teams at the same time. Accessibility users are active users who want to use great apps, complete flows, and pay for subscriptions like everyone else. When an app does not work with VoiceOver, Voice Control, or larger text sizes, they do not get the product value, and teams lose trust, retention, and revenue they could have kept.
+
+`accessibility-preflight` exists to change that by making accessibility readiness a deliberate, repeatable part of the shipping workflow instead of an afterthought.
 
 ### What It Does Today
 
@@ -132,6 +150,7 @@ is meant for a quick pass. The manual workflow command is the fuller release-rev
 - `Tests/`: package test suite
 - `Harnesses/`: iOS accessibility audit harness assets
 - `Templates/`: semantic integration templates
+- `assets/`: SVG artwork for GitHub and docs
 - `docs/`: scope, roadmap, workflows, and release guidance
 
 ### GitHub Prep

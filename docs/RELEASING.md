@@ -13,6 +13,7 @@ This package currently lives inside a larger monorepo. Before publishing it as a
 - `Tests/`
 - `Harnesses/`
 - `Templates/`
+- `assets/`
 - `skills/`
 - `scripts/`
 - `docs/`

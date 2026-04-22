@@ -31,6 +31,7 @@ rsync -a \
   "${package_root}/Tests" \
   "${package_root}/Harnesses" \
   "${package_root}/Templates" \
+  "${package_root}/assets" \
   "${package_root}/skills" \
   "${package_root}/scripts" \
   "${package_root}/docs" \

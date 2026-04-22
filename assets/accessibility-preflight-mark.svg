@@ -1,0 +1,11 @@
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Accessibility Preflight mark</title>
+  <desc id="desc">A rounded square badge with an eye, a check path, and a runway line representing accessibility review before release.</desc>
+  <rect x="16" y="16" width="224" height="224" rx="48" fill="#0F2E2D"/>
+  <rect x="30" y="30" width="196" height="196" rx="34" fill="#123D3B" stroke="#6FE0BC" stroke-width="4"/>
+  <path d="M64 134C78 104 100 88 128 88C156 88 178 104 192 134C178 164 156 180 128 180C100 180 78 164 64 134Z" fill="#E8FFF8" fill-opacity="0.12" stroke="#D9FFF4" stroke-width="8"/>
+  <circle cx="128" cy="134" r="24" fill="#6FE0BC"/>
+  <circle cx="128" cy="134" r="10" fill="#0F2E2D"/>
+  <path d="M92 196H164" stroke="#6FE0BC" stroke-width="8" stroke-linecap="round"/>
+  <path d="M98 98L118 118L160 76" stroke="#FFD66B" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

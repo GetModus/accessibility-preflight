@@ -1,0 +1,19 @@
+<svg width="1280" height="640" viewBox="0 0 1280 640" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Accessibility Preflight social card</title>
+  <desc id="desc">A social banner for Accessibility Preflight describing it as an iOS-first accessibility preflight tool for Apple app teams.</desc>
+  <rect width="1280" height="640" fill="#081C1B"/>
+  <circle cx="1148" cy="122" r="196" fill="#123D3B"/>
+  <circle cx="138" cy="590" r="230" fill="#0D2E2C"/>
+  <rect x="70" y="72" width="1140" height="496" rx="36" fill="#0F2E2D" stroke="#2AA889" stroke-width="2"/>
+  <rect x="108" y="110" width="150" height="150" rx="28" fill="#123D3B" stroke="#6FE0BC" stroke-width="4"/>
+  <path d="M136 186C146 163 163 151 183 151C203 151 220 163 230 186C220 209 203 221 183 221C163 221 146 209 136 186Z" fill="#E8FFF8" fill-opacity="0.12" stroke="#D9FFF4" stroke-width="7"/>
+  <circle cx="183" cy="186" r="17" fill="#6FE0BC"/>
+  <circle cx="183" cy="186" r="7" fill="#0F2E2D"/>
+  <path d="M154 154L169 169L204 134" stroke="#FFD66B" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="294" y="186" fill="#F4FFF9" font-family="Helvetica, Arial, sans-serif" font-size="74" font-weight="700">Accessibility Preflight</text>
+  <text x="294" y="242" fill="#9CEFD4" font-family="Helvetica, Arial, sans-serif" font-size="28" font-weight="600">iOS-first preflight for Apple app accessibility</text>
+  <text x="108" y="352" fill="#F4FFF9" font-family="Helvetica, Arial, sans-serif" font-size="34" font-weight="600">Catch the issues that keep VoiceOver, Voice Control, and Dynamic Type from working</text>
+  <text x="108" y="408" fill="#C8F7E8" font-family="Helvetica, Arial, sans-serif" font-size="27">Static checks, real Simulator verification, review-gated remediation, and explicit manual workflows.</text>
+  <rect x="108" y="468" width="242" height="54" rx="27" fill="#6FE0BC"/>
+  <text x="136" y="503" fill="#0A1E1D" font-family="Helvetica, Arial, sans-serif" font-size="25" font-weight="700">github.com/GetModus</text>
+</svg>
