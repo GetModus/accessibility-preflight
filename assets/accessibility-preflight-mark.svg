@@ -1,25 +1,25 @@
 <svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
   <title id="title">Accessibility Preflight mark</title>
-  <desc id="desc">A refined rounded-square mark with a clean status ring and a confident checkmark for accessibility release readiness.</desc>
+  <desc id="desc">A centered product-style mark with a refined status ring and check for accessibility release readiness.</desc>
   <defs>
-    <linearGradient id="canvas" x1="28" y1="18" x2="222" y2="236" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#FAFAFC"/>
+    <linearGradient id="canvas" x1="28" y1="20" x2="228" y2="236" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FBFBFD"/>
       <stop offset="1" stop-color="#F1F2F6"/>
     </linearGradient>
-    <linearGradient id="plate" x1="56" y1="46" x2="200" y2="206" gradientUnits="userSpaceOnUse">
+    <linearGradient id="plate" x1="52" y1="40" x2="204" y2="208" gradientUnits="userSpaceOnUse">
       <stop stop-color="#FFFFFF"/>
       <stop offset="1" stop-color="#F7F7FA"/>
     </linearGradient>
-    <radialGradient id="core" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(128 118) rotate(90) scale(38)">
-      <stop stop-color="#48D368"/>
+    <radialGradient id="core" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(128 128) rotate(90) scale(34)">
+      <stop stop-color="#49D668"/>
       <stop offset="1" stop-color="#34C759"/>
     </radialGradient>
-    <filter id="plate-shadow" x="24" y="26" width="208" height="210" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+    <filter id="plate-shadow" x="24" y="24" width="208" height="212" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
       <feFlood flood-opacity="0" result="BackgroundImageFix"/>
       <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-      <feOffset dy="10"/>
+      <feOffset dy="12"/>
       <feGaussianBlur stdDeviation="10"/>
-      <feColorMatrix type="matrix" values="0 0 0 0 0.0784 0 0 0 0 0.0784 0 0 0 0 0.102 0 0 0 0.12 0"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.0863 0 0 0 0 0.0863 0 0 0 0 0.1098 0 0 0 0.12 0"/>
       <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_1"/>
       <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_1" result="shape"/>
     </filter>
@@ -28,13 +28,13 @@
   <rect width="256" height="256" rx="56" fill="url(#canvas)"/>
 
   <g filter="url(#plate-shadow)">
-    <rect x="38" y="28" width="180" height="180" rx="42" fill="url(#plate)"/>
-    <rect x="38.75" y="28.75" width="178.5" height="178.5" rx="41.25" stroke="#E2E3E8" stroke-width="1.5"/>
+    <rect x="40" y="28" width="176" height="176" rx="40" fill="url(#plate)"/>
+    <rect x="40.75" y="28.75" width="174.5" height="174.5" rx="39.25" stroke="#E3E4E8" stroke-width="1.5"/>
 
-    <circle cx="128" cy="118" r="46" stroke="#D1D1D6" stroke-width="8"/>
-    <circle cx="128" cy="118" r="29" fill="url(#core)"/>
-    <circle cx="128" cy="118" r="10" fill="#FFFFFF" fill-opacity="0.96"/>
+    <circle cx="128" cy="128" r="46" fill="#FBFBFD" stroke="#D3D4DA" stroke-width="8"/>
+    <circle cx="128" cy="128" r="28" fill="url(#core)"/>
+    <circle cx="128" cy="128" r="11" fill="#FFFFFF" fill-opacity="0.98"/>
 
-    <path d="M92 116L117 141L168 89" stroke="#1D1D1F" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M104 128L121 145L153 113" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
   </g>
 </svg>
