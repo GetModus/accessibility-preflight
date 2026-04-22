@@ -56,6 +56,73 @@ That hurts users and product teams at the same time. Accessibility users are act
 
 More detail lives in [docs/SCOPE.md](docs/SCOPE.md) and [docs/ROADMAP.md](docs/ROADMAP.md).
 
+### Install
+
+#### Option 1: Download A Release
+
+If you just want the packaged CLI, download the latest release from:
+
+- [GitHub Releases](https://github.com/GetModus/accessibility-preflight/releases)
+
+The current release includes a prebuilt macOS Apple Silicon binary zip.
+
+#### Option 2: Run From Source
+
+Requirements:
+
+- macOS
+- Swift toolchain / Xcode with `swift` available on your path
+
+Clone the repo and run:
+
+```bash
+git clone https://github.com/GetModus/accessibility-preflight.git
+cd accessibility-preflight
+swift run accessibility-preflight help
+```
+
+#### Option 3: Install A Local CLI Shim
+
+To install a simple local command shim into `~/.local/bin`:
+
+```bash
+scripts/install-local.sh
+accessibility-preflight help
+```
+
+This keeps the tool pointing at your local checkout and is useful during development.
+
+### Use In Codex
+
+`Accessibility Preflight` can be used in Codex in two ways:
+
+#### As A CLI
+
+Run it directly inside a project:
+
+```bash
+accessibility-preflight preflight /path/to/apple-app
+```
+
+or from source:
+
+```bash
+swift run accessibility-preflight preflight /path/to/apple-app
+```
+
+#### As A Local Codex Plugin / Skill Wrapper
+
+This repo includes:
+
+- a local plugin manifest at [`.codex-plugin/plugin.json`](.codex-plugin/plugin.json)
+- a Codex skill at [`skills/apple-accessibility-preflight/SKILL.md`](skills/apple-accessibility-preflight/SKILL.md)
+
+That means it is structured to work as a local Codex-integrated tool, not just a standalone CLI.
+
+For setup and usage notes, see:
+
+- [docs/USE-IN-CODEX.md](docs/USE-IN-CODEX.md)
+
 ### Quick Start
 
 From this package directory:
@@ -146,11 +213,13 @@ is meant for a quick pass. The manual workflow command is the fuller release-rev
 ### Repository Layout
 
 - `Package.swift`: SwiftPM entry point
+- `.codex-plugin/`: local Codex plugin wrapper
 - `Sources/`: CLI, runtime verifiers, static rules, report rendering
 - `Tests/`: package test suite
 - `Harnesses/`: iOS accessibility audit harness assets
 - `Templates/`: semantic integration templates
 - `assets/`: SVG artwork for GitHub and docs
+- `skills/`: Codex skill wrapper
 - `docs/`: scope, roadmap, workflows, and release guidance
 
 ### GitHub Prep
