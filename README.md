@@ -1,6 +1,6 @@
 ## Accessibility Preflight
 
-![Accessibility Preflight social card](assets/accessibility-preflight-social-card.svg)
+![Accessibility Preflight brand direction board](assets/accessibility-preflight-brand-board.png)
 
 `accessibility-preflight` is an iOS-first Swift CLI for Apple app accessibility audits.
 
