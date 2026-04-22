@@ -1,11 +1,33 @@
 <svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
   <title id="title">Accessibility Preflight mark</title>
-  <desc id="desc">A rounded square badge with an eye, a check path, and a runway line representing accessibility review before release.</desc>
-  <rect x="16" y="16" width="224" height="224" rx="48" fill="#0F2E2D"/>
-  <rect x="30" y="30" width="196" height="196" rx="34" fill="#123D3B" stroke="#6FE0BC" stroke-width="4"/>
-  <path d="M64 134C78 104 100 88 128 88C156 88 178 104 192 134C178 164 156 180 128 180C100 180 78 164 64 134Z" fill="#E8FFF8" fill-opacity="0.12" stroke="#D9FFF4" stroke-width="8"/>
-  <circle cx="128" cy="134" r="24" fill="#6FE0BC"/>
-  <circle cx="128" cy="134" r="10" fill="#0F2E2D"/>
-  <path d="M92 196H164" stroke="#6FE0BC" stroke-width="8" stroke-linecap="round"/>
-  <path d="M98 98L118 118L160 76" stroke="#FFD66B" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <desc id="desc">A refined rounded square mark with a focus ring, checked path, and runway baseline representing accessible release readiness.</desc>
+  <defs>
+    <linearGradient id="mark-bg" x1="40" y1="28" x2="216" y2="228" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#F2F2F7"/>
+    </linearGradient>
+    <linearGradient id="mark-stroke" x1="64" y1="52" x2="196" y2="204" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#D1D1D6"/>
+    </linearGradient>
+    <filter id="shadow" x="12" y="14" width="232" height="236" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset dy="10"/>
+      <feGaussianBlur stdDeviation="10"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.0745 0 0 0 0 0.0745 0 0 0 0 0.102 0 0 0 0.12 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_1"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_1" result="shape"/>
+    </filter>
+  </defs>
+  <rect width="256" height="256" rx="56" fill="#F5F5F7"/>
+  <g filter="url(#shadow)">
+    <rect x="28" y="24" width="200" height="200" rx="44" fill="url(#mark-bg)"/>
+    <rect x="28.75" y="24.75" width="198.5" height="198.5" rx="43.25" stroke="url(#mark-stroke)" stroke-width="1.5"/>
+    <circle cx="128" cy="108" r="45" stroke="#C7C7CC" stroke-width="6"/>
+    <circle cx="128" cy="108" r="24" fill="#34C759"/>
+    <circle cx="128" cy="108" r="9" fill="#FFFFFF"/>
+    <path d="M92 170H164" stroke="#1D1D1F" stroke-width="6" stroke-linecap="round"/>
+    <path d="M100 74L118 92L156 54" stroke="#1D1D1F" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
 </svg>
